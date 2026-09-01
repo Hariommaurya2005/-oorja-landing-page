@@ -11,15 +11,30 @@ import Mentors from "./components/Mentors";
 import LimitedSeats from "./components/LimitedSeats";
 import FinalCTA from "./components/FinalCTA";
 import Footer from "./components/Footer";
+import ThankYou from "./components/ThankYou";
 
 const App = () => {
   const registrationLink =
     "https://forms.oorjatheband.co.in/form/event-registration-mtgyy39t";
 
+  const currentPath = window.location.pathname;
+
+  /* =================================
+     THANK YOU PAGE
+  ================================= */
+
+  if (currentPath === "/thank-you") {
+    return <ThankYou />;
+  }
+
+  /* =================================
+     LANDING PAGE
+  ================================= */
+
   return (
     <>
       <main>
-             <Hero registrationLink={registrationLink} />
+        <Hero registrationLink={registrationLink} />
 
         <DiscoveryCall registrationLink={registrationLink} />
 

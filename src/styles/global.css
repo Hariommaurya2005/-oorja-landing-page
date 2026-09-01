@@ -9535,3 +9535,347 @@ img {
 .debug-overflow * {
   outline: 1px solid red;
 }
+/* =========================================
+   THANK YOU PAGE
+========================================= */
+
+.thank-you-section {
+  position: relative;
+
+  width: 100%;
+  min-height: 100svh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 60px 20px;
+
+  overflow: hidden;
+
+  isolation: isolate;
+
+  background:
+    radial-gradient(
+      circle at 50% 35%,
+      rgba(220, 174, 53, 0.12),
+      transparent 30%
+    ),
+    linear-gradient(
+      180deg,
+      #080806 0%,
+      #0d0c09 55%,
+      #080806 100%
+    );
+
+  color: var(--color-white);
+}
+
+
+/* =========================================
+   BACKGROUND
+========================================= */
+
+.thank-you-background {
+  position: absolute;
+
+  inset: 0;
+
+  overflow: hidden;
+
+  pointer-events: none;
+
+  z-index: 0;
+}
+
+.thank-you-glow {
+  position: absolute;
+
+  width: 450px;
+  height: 450px;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  border-radius: 50%;
+
+  background: var(--color-gold);
+
+  filter: blur(130px);
+
+  opacity: 0.12;
+}
+
+.thank-you-ring {
+  position: absolute;
+
+  width: 650px;
+  height: 650px;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  border-radius: 50%;
+
+  border:
+    1px solid
+    rgba(220, 174, 53, 0.13);
+}
+
+
+/* =========================================
+   CONTAINER
+========================================= */
+
+.thank-you-container {
+  position: relative;
+
+  z-index: 2;
+
+  width: min(100%, 700px);
+
+  padding: 60px 35px;
+
+  text-align: center;
+
+  border:
+    1px solid
+    rgba(220, 174, 53, 0.16);
+
+  border-radius: 28px;
+
+  background:
+    rgba(255, 255, 255, 0.025);
+
+  backdrop-filter: blur(14px);
+
+  box-shadow:
+    0 30px 100px
+    rgba(0, 0, 0, 0.45);
+}
+
+
+/* =========================================
+   SUCCESS ICON
+========================================= */
+
+.thank-you-icon {
+  width: 76px;
+  height: 76px;
+
+  margin: 0 auto;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  border:
+    1px solid
+    rgba(220, 174, 53, 0.5);
+
+  background:
+    rgba(220, 174, 53, 0.1);
+
+  color: var(--color-gold-light);
+
+  font-size: 32px;
+
+  font-weight: 700;
+
+  box-shadow:
+    0 0 35px
+    rgba(220, 174, 53, 0.13);
+}
+
+
+/* =========================================
+   LABEL
+========================================= */
+
+.thank-you-label {
+  display: block;
+
+  margin-top: 27px;
+
+  color: var(--color-gold-light);
+
+  font-size: 9px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.22em;
+
+  text-transform: uppercase;
+}
+
+
+/* =========================================
+   TITLE
+========================================= */
+
+.thank-you-title {
+  margin-top: 18px;
+
+  color: var(--color-white);
+
+  font-family: var(--font-serif);
+
+  font-size:
+    clamp(48px, 7vw, 82px);
+
+  line-height: 0.98;
+
+  letter-spacing: -0.045em;
+}
+
+.thank-you-title span {
+  display: block;
+
+  margin-top: 8px;
+
+  color: var(--color-gold-light);
+}
+
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.thank-you-description {
+  max-width: 540px;
+
+  margin: 25px auto 0;
+
+  color:
+    rgba(255, 255, 255, 0.6);
+
+  font-size: 15px;
+
+  line-height: 1.8;
+}
+
+
+/* =========================================
+   BUTTON
+========================================= */
+
+.thank-you-button {
+  min-height: 52px;
+
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 14px;
+
+  margin-top: 35px;
+
+  padding: 14px 28px;
+
+  border-radius: 999px;
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--color-gold-light),
+      var(--color-gold)
+    );
+
+  color: #17140b;
+
+  font-size: 11px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.12em;
+
+  text-transform: uppercase;
+
+  box-shadow:
+    0 14px 35px
+    rgba(220, 174, 53, 0.22);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.thank-you-button:hover {
+  transform: translateY(-4px);
+
+  box-shadow:
+    0 20px 45px
+    rgba(220, 174, 53, 0.32);
+}
+
+.thank-you-button span {
+  font-size: 18px;
+
+  transition:
+    transform 0.25s ease;
+}
+
+.thank-you-button:hover span {
+  transform:
+    translateX(5px);
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .thank-you-section {
+    padding: 25px 15px;
+  }
+
+  .thank-you-container {
+    padding: 45px 22px;
+
+    border-radius: 22px;
+  }
+
+  .thank-you-icon {
+    width: 65px;
+    height: 65px;
+
+    font-size: 27px;
+  }
+
+  .thank-you-label {
+    font-size: 7px;
+
+    letter-spacing: 0.16em;
+  }
+
+  .thank-you-title {
+    font-size:
+      clamp(40px, 12vw, 58px);
+  }
+
+  .thank-you-description {
+    font-size: 13px;
+
+    line-height: 1.75;
+  }
+
+  .thank-you-button {
+    width: min(100%, 280px);
+  }
+
+  .thank-you-ring {
+    width: 450px;
+    height: 450px;
+  }
+
+}
