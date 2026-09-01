@@ -1,7 +1,7 @@
 import React from "react";
 import aboutImage from "../assets/images/20190427_180716.jpg.jpeg";
 
-const AboutProgram = ({ onApply }) => {
+const AboutProgram = ({ registrationLink }) => {
   return (
     <section
       className="about-program-section light-section"
@@ -12,18 +12,20 @@ const AboutProgram = ({ onApply }) => {
       ================================= */}
 
       <div className="about-program-background">
+
         <div className="about-program-orb about-program-orb-one"></div>
 
         <div className="about-program-orb about-program-orb-two"></div>
 
         <div className="about-program-ring"></div>
+
       </div>
 
 
       <div className="about-program-container">
 
         {/* =================================
-            SECTION HEADER
+            SECTION LABEL
         ================================= */}
 
         <div className="about-program-label">
@@ -62,7 +64,7 @@ const AboutProgram = ({ onApply }) => {
               <div className="about-program-image-overlay"></div>
 
 
-              {/* Image Floating Card */}
+              {/* Floating Image Card */}
 
               <div className="about-program-image-card">
 
@@ -88,10 +90,13 @@ const AboutProgram = ({ onApply }) => {
           <div className="about-program-copy">
 
             <h2 className="about-program-title">
+
               We Don't Just Teach Singing.
+
               <span>
                 We Build Artists.
               </span>
+
             </h2>
 
 
@@ -124,6 +129,7 @@ const AboutProgram = ({ onApply }) => {
                 </span>
 
                 <div>
+
                   <h3>
                     Artist Development
                   </h3>
@@ -131,6 +137,7 @@ const AboutProgram = ({ onApply }) => {
                   <p>
                     Build the complete foundation of your artist identity.
                   </p>
+
                 </div>
 
               </div>
@@ -143,6 +150,7 @@ const AboutProgram = ({ onApply }) => {
                 </span>
 
                 <div>
+
                   <h3>
                     Professional Training
                   </h3>
@@ -150,6 +158,7 @@ const AboutProgram = ({ onApply }) => {
                   <p>
                     Learn through practical training and expert guidance.
                   </p>
+
                 </div>
 
               </div>
@@ -162,6 +171,7 @@ const AboutProgram = ({ onApply }) => {
                 </span>
 
                 <div>
+
                   <h3>
                     Real Performance
                   </h3>
@@ -169,6 +179,7 @@ const AboutProgram = ({ onApply }) => {
                   <p>
                     Gain confidence through real stage experience.
                   </p>
+
                 </div>
 
               </div>
@@ -182,10 +193,11 @@ const AboutProgram = ({ onApply }) => {
 
             <div className="about-program-cta">
 
-              <button
-                type="button"
+              <a
+                href={registrationLink}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="about-program-button"
-                onClick={onApply}
               >
 
                 <span>
@@ -196,7 +208,7 @@ const AboutProgram = ({ onApply }) => {
                   →
                 </span>
 
-              </button>
+              </a>
 
             </div>
 

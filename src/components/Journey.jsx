@@ -1,7 +1,7 @@
 import React from "react";
 import journeyImage from "../assets/images/IMG-20260801-WA0006.jpg.jpeg";
 
-const Journey = ({ onApply }) => {
+const Journey = ({ registrationLink }) => {
   const journeySteps = [
     {
       number: "01",
@@ -36,7 +36,6 @@ const Journey = ({ onApply }) => {
       ================================= */}
 
       <div className="journey-background">
-
         <div className="journey-orb journey-orb-one"></div>
 
         <div className="journey-orb journey-orb-two"></div>
@@ -46,7 +45,6 @@ const Journey = ({ onApply }) => {
         <div className="journey-ring journey-ring-two"></div>
 
         <div className="journey-grid"></div>
-
       </div>
 
 
@@ -78,11 +76,13 @@ const Journey = ({ onApply }) => {
           <h2 className="journey-title">
 
             From
+
             <span>
               Passion
             </span>
 
             To
+
             <span>
               Performance.
             </span>
@@ -113,7 +113,6 @@ const Journey = ({ onApply }) => {
             />
 
             <div className="journey-image-overlay"></div>
-
 
             <div className="journey-image-badge">
 
@@ -193,6 +192,7 @@ const Journey = ({ onApply }) => {
 
           <h3>
             You just need to be
+
             <span>
               ready to begin.
             </span>
@@ -207,10 +207,11 @@ const Journey = ({ onApply }) => {
 
         <div className="journey-cta">
 
-          <button
-            type="button"
+          <a
+            href={registrationLink}
+            target="_blank"
+            rel="noopener noreferrer"
             className="journey-button"
-            onClick={onApply}
           >
 
             <span>
@@ -221,7 +222,7 @@ const Journey = ({ onApply }) => {
               →
             </span>
 
-          </button>
+          </a>
 
         </div>
 

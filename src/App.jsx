@@ -1,10 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 
 import Hero from "./components/Hero";
 import DiscoveryCall from "./components/DiscoveryCall";
 import ProgramForYou from "./components/ProgramForYou";
 import AboutProgram from "./components/AboutProgram";
-import ApplicationForm from "./components/ApplicationForm";
 import Benefits from "./components/Benefits";
 import Journey from "./components/Journey";
 import Transformation from "./components/Transformation";
@@ -12,41 +11,36 @@ import Mentors from "./components/Mentors";
 import LimitedSeats from "./components/LimitedSeats";
 import FinalCTA from "./components/FinalCTA";
 import Footer from "./components/Footer";
+
 const App = () => {
-  const [isFormOpen, setIsFormOpen] = useState(false);
-
-  const openForm = () => {
-    setIsFormOpen(true);
-  };
-
-  const closeForm = () => {
-    setIsFormOpen(false);
-  };
+  const registrationLink =
+    "https://forms.oorjatheband.co.in/form/event-registration-mtgyy39t";
 
   return (
     <>
       <main>
-        <Hero onApply={openForm} />
+             <Hero registrationLink={registrationLink} />
 
-        <DiscoveryCall onApply={openForm} />
+        <DiscoveryCall registrationLink={registrationLink} />
 
-        <ProgramForYou onApply={openForm} />
+        <ProgramForYou registrationLink={registrationLink} />
 
-        <AboutProgram onApply={openForm} />
-        <Benefits onApply={openForm} />
-        <Journey onApply={openForm} />
-        <Transformation onApply={openForm} />
-        <Mentors onApply={openForm} />
-        <LimitedSeats onApply={openForm} />
-        <FinalCTA onApply={openForm} />
+        <AboutProgram registrationLink={registrationLink} />
 
+        <Benefits registrationLink={registrationLink} />
+
+        <Journey registrationLink={registrationLink} />
+
+        <Transformation registrationLink={registrationLink} />
+
+        <Mentors registrationLink={registrationLink} />
+
+        <LimitedSeats registrationLink={registrationLink} />
+
+        <FinalCTA registrationLink={registrationLink} />
       </main>
 
-      <ApplicationForm
-        isOpen={isFormOpen}
-        onClose={closeForm}
-      />
-      <Footer />
+      <Footer registrationLink={registrationLink} />
     </>
   );
 };

@@ -1,6 +1,6 @@
 import React from "react";
 
-const Footer = () => {
+const Footer = ({ registrationLink }) => {
   return (
     <footer className="footer-section">
 
@@ -163,18 +163,26 @@ const Footer = () => {
 
             <h2>
               Keep
+
               <strong>
                 Creating.
               </strong>
+
             </h2>
 
           </div>
 
+
           <a
-            href="#apply"
+            href={registrationLink}
+            target="_blank"
+            rel="noopener noreferrer"
             className="footer-cta-button"
           >
-            Start Your Journey
+            <span>
+              Start Your Journey
+            </span>
+
             <span>
               →
             </span>

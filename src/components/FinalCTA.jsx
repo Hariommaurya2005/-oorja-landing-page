@@ -1,7 +1,7 @@
 import React from "react";
 import finalCtaImage from "../assets/images/IMG-20260801-WA0007.jpg.jpeg";
 
-const FinalCTA = ({ onApply }) => {
+const FinalCTA = ({ registrationLink }) => {
   return (
     <section
       className="final-cta-section"
@@ -46,6 +46,7 @@ const FinalCTA = ({ onApply }) => {
 
 
           <div className="final-cta-image-badge">
+
             <span>
               OORJA
             </span>
@@ -53,6 +54,7 @@ const FinalCTA = ({ onApply }) => {
             <small>
               THE TALENT HUB
             </small>
+
           </div>
 
         </div>
@@ -80,6 +82,7 @@ const FinalCTA = ({ onApply }) => {
           <h2 className="final-cta-title">
 
             Ready To Start
+
             <span>
               Your Artist Journey?
             </span>
@@ -98,11 +101,13 @@ const FinalCTA = ({ onApply }) => {
               CTA
           ================================= */}
 
-          <button
-            type="button"
+          <a
+            href={registrationLink}
+            target="_blank"
+            rel="noopener noreferrer"
             className="final-cta-button"
-            onClick={onApply}
           >
+
             <span>
               Apply For Selection
             </span>
@@ -110,7 +115,8 @@ const FinalCTA = ({ onApply }) => {
             <span className="final-cta-button-arrow">
               →
             </span>
-          </button>
+
+          </a>
 
 
           <p className="final-cta-note">

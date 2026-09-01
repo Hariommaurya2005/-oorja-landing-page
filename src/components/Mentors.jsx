@@ -4,7 +4,7 @@ import mentorOne from "../assets/images/IMG_1318.JPG.jpeg";
 import mentorTwo from "../assets/images/IMG-20260801-WA0005.jpg.jpeg";
 import mentorThree from "../assets/images/IMG-20260801-WA0007.jpg.jpeg";
 
-const Mentors = ({ onApply }) => {
+const Mentors = ({ registrationLink }) => {
   const mentors = [
     {
       id: "01",
@@ -84,6 +84,7 @@ const Mentors = ({ onApply }) => {
           <h2 className="mentors-title">
 
             Learn From People
+
             <span>
               Who've Been There.
             </span>
@@ -186,12 +187,12 @@ const Mentors = ({ onApply }) => {
 
         <div className="mentors-cta">
 
-          <button
-            type="button"
+          <a
+            href={registrationLink}
+            target="_blank"
+            rel="noopener noreferrer"
             className="mentors-button"
-            onClick={onApply}
           >
-
             <span>
               Apply For Selection
             </span>
@@ -199,12 +200,12 @@ const Mentors = ({ onApply }) => {
             <span className="mentors-button-arrow">
               →
             </span>
-
-          </button>
+          </a>
 
         </div>
 
       </div>
+
     </section>
   );
 };

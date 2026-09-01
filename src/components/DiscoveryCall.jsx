@@ -1,7 +1,7 @@
 import React from "react";
 import discoveryImage from "../assets/images/IMG_20221026_225608_828.jpg.jpeg";
 
-const DiscoveryCall = ({ onApply }) => {
+const DiscoveryCall = ({ registrationLink }) => {
   return (
     <section
       className="discovery-section light-section"
@@ -12,11 +12,13 @@ const DiscoveryCall = ({ onApply }) => {
       ================================= */}
 
       <div className="discovery-background">
+
         <div className="discovery-orb discovery-orb-one"></div>
 
         <div className="discovery-orb discovery-orb-two"></div>
 
         <div className="discovery-ring"></div>
+
       </div>
 
 
@@ -27,6 +29,7 @@ const DiscoveryCall = ({ onApply }) => {
         ================================= */}
 
         <div className="discovery-label">
+
           <span className="discovery-label-line"></span>
 
           <span>
@@ -34,6 +37,7 @@ const DiscoveryCall = ({ onApply }) => {
           </span>
 
           <span className="discovery-label-line"></span>
+
         </div>
 
 
@@ -42,11 +46,13 @@ const DiscoveryCall = ({ onApply }) => {
         ================================= */}
 
         <h2 className="discovery-title">
+
           Your Voice Has
 
           <span>
             More To Offer.
           </span>
+
         </h2>
 
 
@@ -69,7 +75,7 @@ const DiscoveryCall = ({ onApply }) => {
         <div className="discovery-content">
 
           {/* =================================
-              LEFT IMAGE
+              IMAGE + INTRO
           ================================= */}
 
           <div className="discovery-image-column">
@@ -84,9 +90,19 @@ const DiscoveryCall = ({ onApply }) => {
 
               <div className="discovery-image-overlay"></div>
 
+
+              {/* Image Badge */}
+
               <div className="discovery-image-badge">
-                <span>OORJA</span>
-                <small>THE TALENT HUB</small>
+
+                <span>
+                  OORJA
+                </span>
+
+                <small>
+                  THE TALENT HUB
+                </small>
+
               </div>
 
             </div>
@@ -128,7 +144,9 @@ const DiscoveryCall = ({ onApply }) => {
             <div className="discovery-point">
 
               <div className="discovery-icon">
-                <span>♪</span>
+                <span>
+                  ♪
+                </span>
               </div>
 
               <div className="discovery-point-content">
@@ -152,7 +170,9 @@ const DiscoveryCall = ({ onApply }) => {
             <div className="discovery-point">
 
               <div className="discovery-icon">
-                <span>✦</span>
+                <span>
+                  ✦
+                </span>
               </div>
 
               <div className="discovery-point-content">
@@ -176,7 +196,9 @@ const DiscoveryCall = ({ onApply }) => {
             <div className="discovery-point">
 
               <div className="discovery-icon">
-                <span>◈</span>
+                <span>
+                  ◈
+                </span>
               </div>
 
               <div className="discovery-point-content">
@@ -200,7 +222,9 @@ const DiscoveryCall = ({ onApply }) => {
             <div className="discovery-point">
 
               <div className="discovery-icon">
-                <span>★</span>
+                <span>
+                  ★
+                </span>
               </div>
 
               <div className="discovery-point-content">
@@ -229,11 +253,13 @@ const DiscoveryCall = ({ onApply }) => {
 
         <div className="discovery-cta">
 
-          <button
-            type="button"
+          <a
+            href={registrationLink}
+            target="_blank"
+            rel="noopener noreferrer"
             className="discovery-button"
-            onClick={onApply}
           >
+
             <span>
               Start Your Journey
             </span>
@@ -241,7 +267,8 @@ const DiscoveryCall = ({ onApply }) => {
             <span className="discovery-button-arrow">
               →
             </span>
-          </button>
+
+          </a>
 
         </div>
 

@@ -1,7 +1,7 @@
 import React from "react";
 import transformationImage from "../assets/images/R75A7539.JPG.jpeg";
 
-const Transformation = ({ onApply }) => {
+const Transformation = ({ registrationLink }) => {
   const transformations = [
     {
       number: "01",
@@ -51,6 +51,7 @@ const Transformation = ({ onApply }) => {
       ================================= */}
 
       <div className="transformation-background">
+
         <div className="transformation-orb transformation-orb-one"></div>
 
         <div className="transformation-orb transformation-orb-two"></div>
@@ -60,6 +61,7 @@ const Transformation = ({ onApply }) => {
         <div className="transformation-ring transformation-ring-two"></div>
 
         <div className="transformation-grid"></div>
+
       </div>
 
 
@@ -70,6 +72,7 @@ const Transformation = ({ onApply }) => {
         ================================= */}
 
         <div className="transformation-label">
+
           <span className="transformation-label-line"></span>
 
           <span>
@@ -77,6 +80,7 @@ const Transformation = ({ onApply }) => {
           </span>
 
           <span className="transformation-label-line"></span>
+
         </div>
 
 
@@ -85,16 +89,21 @@ const Transformation = ({ onApply }) => {
         ================================= */}
 
         <div className="transformation-heading">
+
           <h2 className="transformation-title">
+
             You Don't Just
+
             <span>
               Learn.
             </span>
 
             You
+
             <span>
               Transform.
             </span>
+
           </h2>
 
           <p className="transformation-description">
@@ -103,11 +112,12 @@ const Transformation = ({ onApply }) => {
             identity, and the foundation to move forward as a real
             performing artist.
           </p>
+
         </div>
 
 
         {/* =================================
-            FEATURE IMAGE + STATEMENT
+            FEATURE IMAGE + CONTENT
         ================================= */}
 
         <div className="transformation-feature">
@@ -121,6 +131,9 @@ const Transformation = ({ onApply }) => {
             />
 
             <div className="transformation-image-overlay"></div>
+
+
+            {/* Badge */}
 
             <div className="transformation-image-badge">
 
@@ -144,10 +157,13 @@ const Transformation = ({ onApply }) => {
             </span>
 
             <h3>
+
               From “Maybe I Can”
+
               <span>
                 To “Watch Me.”
               </span>
+
             </h3>
 
             <p>
@@ -156,11 +172,16 @@ const Transformation = ({ onApply }) => {
               step forward, perform, and be seen.
             </p>
 
-            <button
-              type="button"
+
+            {/* CTA */}
+
+            <a
+              href={registrationLink}
+              target="_blank"
+              rel="noopener noreferrer"
               className="transformation-button"
-              onClick={onApply}
             >
+
               <span>
                 Start My Transformation
               </span>
@@ -168,7 +189,8 @@ const Transformation = ({ onApply }) => {
               <span className="transformation-button-arrow">
                 →
               </span>
-            </button>
+
+            </a>
 
           </div>
 
@@ -199,13 +221,16 @@ const Transformation = ({ onApply }) => {
 
               </div>
 
+
               <h3>
                 {item.title}
               </h3>
 
+
               <p>
                 {item.text}
               </p>
+
 
               <span className="transformation-card-line"></span>
 
@@ -226,11 +251,14 @@ const Transformation = ({ onApply }) => {
             starts with the decision you make today.
           </p>
 
-          <button
-            type="button"
+
+          <a
+            href={registrationLink}
+            target="_blank"
+            rel="noopener noreferrer"
             className="transformation-bottom-button"
-            onClick={onApply}
           >
+
             <span>
               Apply For Selection
             </span>
@@ -238,11 +266,13 @@ const Transformation = ({ onApply }) => {
             <span>
               →
             </span>
-          </button>
+
+          </a>
 
         </div>
 
       </div>
+
     </section>
   );
 };

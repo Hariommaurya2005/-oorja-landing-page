@@ -2,7 +2,7 @@ import React from "react";
 import useScrollReveal from "../hooks/useScrollReveal";
 import programImage from "../assets/images/IMG-20191129-WA0011.jpg.jpeg";
 
-const ProgramForYou = ({ onApply }) => {
+const ProgramForYou = ({ registrationLink }) => {
   const sectionRef = useScrollReveal();
 
   return (
@@ -118,9 +118,7 @@ const ProgramForYou = ({ onApply }) => {
 
           <div className="program-points">
 
-            {/* =================================
-                POINT 1
-            ================================= */}
+            {/* POINT 1 */}
 
             <div className="program-point">
 
@@ -145,9 +143,7 @@ const ProgramForYou = ({ onApply }) => {
             </div>
 
 
-            {/* =================================
-                POINT 2
-            ================================= */}
+            {/* POINT 2 */}
 
             <div className="program-point">
 
@@ -172,9 +168,7 @@ const ProgramForYou = ({ onApply }) => {
             </div>
 
 
-            {/* =================================
-                POINT 3
-            ================================= */}
+            {/* POINT 3 */}
 
             <div className="program-point">
 
@@ -199,9 +193,7 @@ const ProgramForYou = ({ onApply }) => {
             </div>
 
 
-            {/* =================================
-                POINT 4
-            ================================= */}
+            {/* POINT 4 */}
 
             <div className="program-point">
 
@@ -240,10 +232,12 @@ const ProgramForYou = ({ onApply }) => {
             Ready to take your talent seriously?
           </p>
 
-          <button
-            type="button"
+
+          <a
+            href={registrationLink}
+            target="_blank"
+            rel="noopener noreferrer"
             className="program-button"
-            onClick={onApply}
           >
             <span>
               Apply For Selection
@@ -252,7 +246,7 @@ const ProgramForYou = ({ onApply }) => {
             <span className="program-button-arrow">
               →
             </span>
-          </button>
+          </a>
 
         </div>
 

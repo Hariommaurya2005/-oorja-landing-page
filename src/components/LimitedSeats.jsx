@@ -1,7 +1,7 @@
 import React from "react";
 import limitedSeatsImage from "../assets/images/IMG-20260801-WA0006.jpg.jpeg";
 
-const LimitedSeats = ({ onApply }) => {
+const LimitedSeats = ({ registrationLink }) => {
   return (
     <section
       className="limited-seats-section dark-section"
@@ -68,7 +68,7 @@ const LimitedSeats = ({ onApply }) => {
               <div className="limited-seats-image-frame"></div>
 
 
-              {/* Floating badge */}
+              {/* Floating Badge */}
 
               <div className="limited-seats-badge">
 
@@ -107,11 +107,13 @@ const LimitedSeats = ({ onApply }) => {
             <h2 className="limited-seats-title">
 
               Your Next
+
               <span>
                 90 Days
               </span>
 
               Could Change
+
               <span>
                 Everything.
               </span>
@@ -160,6 +162,7 @@ const LimitedSeats = ({ onApply }) => {
 
               <div className="limited-seats-point">
                 <span>✓</span>
+
                 <p>
                   Small batch for focused mentorship
                 </p>
@@ -167,6 +170,7 @@ const LimitedSeats = ({ onApply }) => {
 
               <div className="limited-seats-point">
                 <span>✓</span>
+
                 <p>
                   Real performance opportunities
                 </p>
@@ -174,6 +178,7 @@ const LimitedSeats = ({ onApply }) => {
 
               <div className="limited-seats-point">
                 <span>✓</span>
+
                 <p>
                   Personal feedback throughout the journey
                 </p>
@@ -186,10 +191,11 @@ const LimitedSeats = ({ onApply }) => {
                 CTA
             ================================= */}
 
-            <button
-              type="button"
+            <a
+              href={registrationLink}
+              target="_blank"
+              rel="noopener noreferrer"
               className="limited-seats-button"
-              onClick={onApply}
             >
 
               <span>
@@ -200,7 +206,7 @@ const LimitedSeats = ({ onApply }) => {
                 →
               </span>
 
-            </button>
+            </a>
 
 
             <p className="limited-seats-note">

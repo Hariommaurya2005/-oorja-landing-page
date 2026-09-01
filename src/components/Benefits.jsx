@@ -1,7 +1,7 @@
 import React from "react";
 import benefitsImage from "../assets/images/IMG-20260801-WA0005.jpg.jpeg";
 
-const Benefits = ({ onApply }) => {
+const Benefits = ({ registrationLink }) => {
   const benefits = [
     {
       number: "01",
@@ -93,6 +93,7 @@ const Benefits = ({ onApply }) => {
           <h2 className="benefits-title">
 
             More Than
+
             <span>
               Singing Lessons.
             </span>
@@ -147,10 +148,13 @@ const Benefits = ({ onApply }) => {
             </span>
 
             <h3>
+
               Everything You Need
+
               <span>
                 To Become Stage Ready.
               </span>
+
             </h3>
 
             <p>
@@ -160,11 +164,18 @@ const Benefits = ({ onApply }) => {
               clarity, and professional presence.
             </p>
 
-            <button
-              type="button"
+
+            {/* =================================
+                CTA
+            ================================= */}
+
+            <a
+              href={registrationLink}
+              target="_blank"
+              rel="noopener noreferrer"
               className="benefits-button"
-              onClick={onApply}
             >
+
               <span>
                 Apply For Selection
               </span>
@@ -172,7 +183,8 @@ const Benefits = ({ onApply }) => {
               <span className="benefits-button-arrow">
                 →
               </span>
-            </button>
+
+            </a>
 
           </div>
 
@@ -190,6 +202,7 @@ const Benefits = ({ onApply }) => {
               className="benefit-card"
               key={benefit.number}
             >
+
               <div className="benefit-card-top">
 
                 <span className="benefit-number">
@@ -202,13 +215,16 @@ const Benefits = ({ onApply }) => {
 
               </div>
 
+
               <h3>
                 {benefit.title}
               </h3>
 
+
               <p>
                 {benefit.text}
               </p>
+
 
               <span className="benefit-card-arrow">
                 →
@@ -230,11 +246,13 @@ const Benefits = ({ onApply }) => {
             Your transformation starts here.
           </p>
 
-          <button
-            type="button"
+          <a
+            href={registrationLink}
+            target="_blank"
+            rel="noopener noreferrer"
             className="benefits-bottom-button"
-            onClick={onApply}
           >
+
             <span>
               Start Your Artist Journey
             </span>
@@ -242,7 +260,8 @@ const Benefits = ({ onApply }) => {
             <span>
               →
             </span>
-          </button>
+
+          </a>
 
         </div>
 
