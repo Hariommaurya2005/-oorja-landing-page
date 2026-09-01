@@ -48,7 +48,7 @@ const AboutProgram = ({ registrationLink }) => {
         <div className="about-program-content">
 
           {/* =================================
-              IMAGE SIDE
+              IMAGE
           ================================= */}
 
           <div className="about-program-image-column">
@@ -64,7 +64,7 @@ const AboutProgram = ({ registrationLink }) => {
               <div className="about-program-image-overlay"></div>
 
 
-              {/* Floating Image Card */}
+              {/* Floating Card */}
 
               <div className="about-program-image-card">
 
@@ -84,7 +84,7 @@ const AboutProgram = ({ registrationLink }) => {
 
 
           {/* =================================
-              TEXT SIDE
+              CONTENT
           ================================= */}
 
           <div className="about-program-copy">
@@ -188,7 +188,7 @@ const AboutProgram = ({ registrationLink }) => {
 
 
             {/* =================================
-                CTA
+                SINGLE CTA
             ================================= */}
 
             <div className="about-program-cta">
@@ -197,17 +197,15 @@ const AboutProgram = ({ registrationLink }) => {
                 href={registrationLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="about-program-button"
+                className="about-program-button about-program-cta-button"
               >
-
                 <span>
-                  Apply For The Program
+                  Book My Session Now!
                 </span>
 
                 <span className="about-program-button-arrow">
                   →
                 </span>
-
               </a>
 
             </div>
@@ -218,7 +216,7 @@ const AboutProgram = ({ registrationLink }) => {
 
 
         {/* =================================
-            BOTTOM STAT STRIP
+            BOTTOM STATS
         ================================= */}
 
         <div className="about-program-stats">

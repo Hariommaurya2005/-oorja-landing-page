@@ -12,13 +12,11 @@ const DiscoveryCall = ({ registrationLink }) => {
       ================================= */}
 
       <div className="discovery-background">
-
         <div className="discovery-orb discovery-orb-one"></div>
 
         <div className="discovery-orb discovery-orb-two"></div>
 
         <div className="discovery-ring"></div>
-
       </div>
 
 
@@ -29,7 +27,6 @@ const DiscoveryCall = ({ registrationLink }) => {
         ================================= */}
 
         <div className="discovery-label">
-
           <span className="discovery-label-line"></span>
 
           <span>
@@ -37,7 +34,6 @@ const DiscoveryCall = ({ registrationLink }) => {
           </span>
 
           <span className="discovery-label-line"></span>
-
         </div>
 
 
@@ -46,13 +42,11 @@ const DiscoveryCall = ({ registrationLink }) => {
         ================================= */}
 
         <h2 className="discovery-title">
-
           Your Voice Has
 
           <span>
             More To Offer.
           </span>
-
         </h2>
 
 
@@ -75,7 +69,7 @@ const DiscoveryCall = ({ registrationLink }) => {
         <div className="discovery-content">
 
           {/* =================================
-              IMAGE + INTRO
+              LEFT IMAGE
           ================================= */}
 
           <div className="discovery-image-column">
@@ -90,11 +84,7 @@ const DiscoveryCall = ({ registrationLink }) => {
 
               <div className="discovery-image-overlay"></div>
 
-
-              {/* Image Badge */}
-
               <div className="discovery-image-badge">
-
                 <span>
                   OORJA
                 </span>
@@ -102,7 +92,6 @@ const DiscoveryCall = ({ registrationLink }) => {
                 <small>
                   THE TALENT HUB
                 </small>
-
               </div>
 
             </div>
@@ -248,7 +237,7 @@ const DiscoveryCall = ({ registrationLink }) => {
 
 
         {/* =================================
-            CTA
+            SINGLE CTA
         ================================= */}
 
         <div className="discovery-cta">
@@ -257,23 +246,20 @@ const DiscoveryCall = ({ registrationLink }) => {
             href={registrationLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="discovery-button"
+            className="discovery-button discovery-cta-button"
           >
-
             <span>
-              Start Your Journey
+              Book My Session Now!
             </span>
 
             <span className="discovery-button-arrow">
               →
             </span>
-
           </a>
 
         </div>
 
       </div>
-
     </section>
   );
 };

@@ -51,7 +51,6 @@ const Benefits = ({ registrationLink }) => {
       ================================= */}
 
       <div className="benefits-background">
-
         <div className="benefits-orb benefits-orb-one"></div>
 
         <div className="benefits-orb benefits-orb-two"></div>
@@ -61,7 +60,6 @@ const Benefits = ({ registrationLink }) => {
         <div className="benefits-ring benefits-ring-two"></div>
 
         <div className="benefits-grid"></div>
-
       </div>
 
 
@@ -91,13 +89,11 @@ const Benefits = ({ registrationLink }) => {
         <div className="benefits-heading-wrap">
 
           <h2 className="benefits-title">
-
             More Than
 
             <span>
               Singing Lessons.
             </span>
-
           </h2>
 
           <p className="benefits-description">
@@ -111,7 +107,7 @@ const Benefits = ({ registrationLink }) => {
 
 
         {/* =================================
-            FEATURE IMAGE
+            FEATURE
         ================================= */}
 
         <div className="benefits-feature">
@@ -127,7 +123,6 @@ const Benefits = ({ registrationLink }) => {
             <div className="benefits-feature-overlay"></div>
 
             <div className="benefits-feature-badge">
-
               <span>
                 OORJA
               </span>
@@ -135,7 +130,6 @@ const Benefits = ({ registrationLink }) => {
               <small>
                 COMPLETE ARTIST DEVELOPMENT
               </small>
-
             </div>
 
           </div>
@@ -148,13 +142,11 @@ const Benefits = ({ registrationLink }) => {
             </span>
 
             <h3>
-
               Everything You Need
 
               <span>
                 To Become Stage Ready.
               </span>
-
             </h3>
 
             <p>
@@ -166,24 +158,22 @@ const Benefits = ({ registrationLink }) => {
 
 
             {/* =================================
-                CTA
+                SINGLE CTA
             ================================= */}
 
             <a
               href={registrationLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="benefits-button"
+              className="benefits-button benefits-cta-button"
             >
-
               <span>
-                Apply For Selection
+                Book My Session Now!
               </span>
 
               <span className="benefits-button-arrow">
                 →
               </span>
-
             </a>
 
           </div>
@@ -215,16 +205,13 @@ const Benefits = ({ registrationLink }) => {
 
               </div>
 
-
               <h3>
                 {benefit.title}
               </h3>
 
-
               <p>
                 {benefit.text}
               </p>
-
 
               <span className="benefit-card-arrow">
                 →
@@ -232,36 +219,6 @@ const Benefits = ({ registrationLink }) => {
 
             </article>
           ))}
-
-        </div>
-
-
-        {/* =================================
-            BOTTOM CTA
-        ================================= */}
-
-        <div className="benefits-cta">
-
-          <p>
-            Your transformation starts here.
-          </p>
-
-          <a
-            href={registrationLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="benefits-bottom-button"
-          >
-
-            <span>
-              Start Your Artist Journey
-            </span>
-
-            <span>
-              →
-            </span>
-
-          </a>
 
         </div>
 

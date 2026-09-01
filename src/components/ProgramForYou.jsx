@@ -28,10 +28,6 @@ const ProgramForYou = ({ registrationLink }) => {
       </div>
 
 
-      {/* =================================
-          MAIN CONTAINER
-      ================================= */}
-
       <div className="program-container">
 
         {/* =================================
@@ -92,9 +88,6 @@ const ProgramForYou = ({ registrationLink }) => {
 
               <div className="program-image-overlay"></div>
 
-
-              {/* Image Badge */}
-
               <div className="program-image-badge">
 
                 <span className="program-image-badge-number">
@@ -117,8 +110,6 @@ const ProgramForYou = ({ registrationLink }) => {
           ================================= */}
 
           <div className="program-points">
-
-            {/* POINT 1 */}
 
             <div className="program-point">
 
@@ -143,8 +134,6 @@ const ProgramForYou = ({ registrationLink }) => {
             </div>
 
 
-            {/* POINT 2 */}
-
             <div className="program-point">
 
               <div className="program-point-number">
@@ -168,8 +157,6 @@ const ProgramForYou = ({ registrationLink }) => {
             </div>
 
 
-            {/* POINT 3 */}
-
             <div className="program-point">
 
               <div className="program-point-number">
@@ -192,8 +179,6 @@ const ProgramForYou = ({ registrationLink }) => {
 
             </div>
 
-
-            {/* POINT 4 */}
 
             <div className="program-point">
 
@@ -223,24 +208,19 @@ const ProgramForYou = ({ registrationLink }) => {
 
 
         {/* =================================
-            BOTTOM CTA
+            SINGLE CTA
         ================================= */}
 
         <div className="program-cta">
-
-          <p className="program-cta-text">
-            Ready to take your talent seriously?
-          </p>
-
 
           <a
             href={registrationLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="program-button"
+            className="program-button program-cta-button"
           >
             <span>
-              Apply For Selection
+              Book My Session Now!
             </span>
 
             <span className="program-button-arrow">

@@ -150,7 +150,7 @@ const Footer = ({ registrationLink }) => {
 
 
         {/* =================================
-            FOOTER CTA
+            SINGLE CTA
         ================================= */}
 
         <div className="footer-cta">
@@ -167,7 +167,6 @@ const Footer = ({ registrationLink }) => {
               <strong>
                 Creating.
               </strong>
-
             </h2>
 
           </div>
@@ -180,7 +179,7 @@ const Footer = ({ registrationLink }) => {
             className="footer-cta-button"
           >
             <span>
-              Start Your Journey
+              Book My Session Now!
             </span>
 
             <span>

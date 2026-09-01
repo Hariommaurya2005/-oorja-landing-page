@@ -98,7 +98,7 @@ const FinalCTA = ({ registrationLink }) => {
 
 
           {/* =================================
-              CTA
+              SINGLE CTA
           ================================= */}
 
           <a
@@ -109,7 +109,7 @@ const FinalCTA = ({ registrationLink }) => {
           >
 
             <span>
-              Apply For Selection
+              Book My Session Now!
             </span>
 
             <span className="final-cta-button-arrow">

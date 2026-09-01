@@ -117,7 +117,7 @@ const Transformation = ({ registrationLink }) => {
 
 
         {/* =================================
-            FEATURE IMAGE + CONTENT
+            FEATURE
         ================================= */}
 
         <div className="transformation-feature">
@@ -131,9 +131,6 @@ const Transformation = ({ registrationLink }) => {
             />
 
             <div className="transformation-image-overlay"></div>
-
-
-            {/* Badge */}
 
             <div className="transformation-image-badge">
 
@@ -173,23 +170,23 @@ const Transformation = ({ registrationLink }) => {
             </p>
 
 
-            {/* CTA */}
+            {/* =================================
+                SINGLE CTA
+            ================================= */}
 
             <a
               href={registrationLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="transformation-button"
+              className="transformation-button transformation-cta-button"
             >
-
               <span>
-                Start My Transformation
+                Book My Session Now!
               </span>
 
               <span className="transformation-button-arrow">
                 →
               </span>
-
             </a>
 
           </div>
@@ -250,24 +247,6 @@ const Transformation = ({ registrationLink }) => {
             The artist you want to become
             starts with the decision you make today.
           </p>
-
-
-          <a
-            href={registrationLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="transformation-bottom-button"
-          >
-
-            <span>
-              Apply For Selection
-            </span>
-
-            <span>
-              →
-            </span>
-
-          </a>
 
         </div>
 

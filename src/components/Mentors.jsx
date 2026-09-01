@@ -124,15 +124,9 @@ const Mentors = ({ registrationLink }) => {
 
                 <div className="mentor-image-overlay"></div>
 
-
-                {/* Number */}
-
                 <span className="mentor-number">
                   {mentor.id}
                 </span>
-
-
-                {/* Role */}
 
                 <span className="mentor-role">
                   {mentor.role}
@@ -182,7 +176,7 @@ const Mentors = ({ registrationLink }) => {
 
 
         {/* =================================
-            CTA
+            SINGLE CTA
         ================================= */}
 
         <div className="mentors-cta">
@@ -191,10 +185,10 @@ const Mentors = ({ registrationLink }) => {
             href={registrationLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="mentors-button"
+            className="mentors-button mentors-cta-button"
           >
             <span>
-              Apply For Selection
+              Book My Session Now!
             </span>
 
             <span className="mentors-button-arrow">

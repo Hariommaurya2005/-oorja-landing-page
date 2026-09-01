@@ -3,21 +3,30 @@ import heroImage from "../assets/images/IMG-20260801-WA0004.jpg.jpeg";
 
 const Hero = ({ registrationLink }) => {
   return (
-    <section
-      className="hero-section"
-      id="home"
-      style={{
-        backgroundImage: `url(${heroImage})`,
-      }}
-    >
+    <section className="hero-section" id="home">
+
       {/* =================================
-          BACKGROUND
+          HERO BACKGROUND IMAGE
+      ================================= */}
+
+      <div
+        className="hero-image-background"
+        style={{
+          backgroundImage: `url(${heroImage})`,
+        }}
+      ></div>
+
+
+      {/* =================================
+          BACKGROUND EFFECTS
       ================================= */}
 
       <div className="hero-background">
+
         <div className="hero-background-overlay"></div>
 
         <div className="hero-glow hero-glow-one"></div>
+
         <div className="hero-glow hero-glow-two"></div>
 
 
@@ -55,6 +64,7 @@ const Hero = ({ registrationLink }) => {
         <div className="hero-particle particle-two"></div>
         <div className="hero-particle particle-three"></div>
         <div className="hero-particle particle-four"></div>
+
       </div>
 
 
@@ -90,15 +100,11 @@ const Hero = ({ registrationLink }) => {
             </span>
 
             <span className="hero-title-gold">
-              Talent
+              Talent Into
             </span>
 
             <span>
-              Into Your
-            </span>
-
-            <span className="hero-title-gold">
-              Career.
+              Your Career.
             </span>
 
           </h1>
@@ -114,38 +120,26 @@ const Hero = ({ registrationLink }) => {
 
 
           {/* =================================
-              BUTTONS
+              SINGLE CTA
           ================================= */}
 
           <div className="hero-actions">
-
-            {/* Apply Button */}
 
             <a
               href={registrationLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="hero-primary-button"
+              className="hero-primary-button hero-cta-button"
             >
+
               <span>
-                Apply For Selection
+                Book My Session Now!
               </span>
 
               <span className="hero-button-arrow">
                 →
               </span>
-            </a>
 
-
-            {/* Explore Button */}
-
-            <a
-              href={registrationLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hero-secondary-button"
-            >
-              Explore The Program
             </a>
 
           </div>
@@ -217,7 +211,6 @@ const Hero = ({ registrationLink }) => {
         className="hero-scroll-indicator"
         aria-label="Scroll to explore program"
       >
-
         <span className="hero-scroll-text">
           Scroll To Explore
         </span>
@@ -225,7 +218,6 @@ const Hero = ({ registrationLink }) => {
         <span className="hero-scroll-icon">
           ↓
         </span>
-
       </a>
 
     </section>

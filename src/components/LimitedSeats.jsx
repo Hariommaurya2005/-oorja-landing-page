@@ -12,6 +12,7 @@ const LimitedSeats = ({ registrationLink }) => {
       ================================= */}
 
       <div className="limited-seats-background">
+
         <div className="limited-seats-orb limited-seats-orb-one"></div>
 
         <div className="limited-seats-orb limited-seats-orb-two"></div>
@@ -21,6 +22,7 @@ const LimitedSeats = ({ registrationLink }) => {
         <div className="limited-seats-ring limited-seats-ring-two"></div>
 
         <div className="limited-seats-grid"></div>
+
       </div>
 
 
@@ -77,6 +79,7 @@ const LimitedSeats = ({ registrationLink }) => {
                 </span>
 
                 <div>
+
                   <strong>
                     LIMITED
                   </strong>
@@ -84,6 +87,7 @@ const LimitedSeats = ({ registrationLink }) => {
                   <small>
                     SEATS ONLY
                   </small>
+
                 </div>
 
               </div>
@@ -130,7 +134,7 @@ const LimitedSeats = ({ registrationLink }) => {
 
 
             {/* =================================
-                URGENCY BOX
+                URGENCY
             ================================= */}
 
             <div className="limited-seats-urgency">
@@ -155,51 +159,65 @@ const LimitedSeats = ({ registrationLink }) => {
 
 
             {/* =================================
-                BENEFITS
+                POINTS
             ================================= */}
 
             <div className="limited-seats-points">
 
               <div className="limited-seats-point">
-                <span>✓</span>
+
+                <span>
+                  ✓
+                </span>
 
                 <p>
                   Small batch for focused mentorship
                 </p>
+
               </div>
 
+
               <div className="limited-seats-point">
-                <span>✓</span>
+
+                <span>
+                  ✓
+                </span>
 
                 <p>
                   Real performance opportunities
                 </p>
+
               </div>
 
+
               <div className="limited-seats-point">
-                <span>✓</span>
+
+                <span>
+                  ✓
+                </span>
 
                 <p>
                   Personal feedback throughout the journey
                 </p>
+
               </div>
 
             </div>
 
 
             {/* =================================
-                CTA
+                SINGLE CTA
             ================================= */}
 
             <a
               href={registrationLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="limited-seats-button"
+              className="limited-seats-button limited-seats-cta-button"
             >
 
               <span>
-                Apply For Selection
+                Book My Session Now!
               </span>
 
               <span className="limited-seats-button-arrow">
@@ -219,7 +237,7 @@ const LimitedSeats = ({ registrationLink }) => {
 
 
         {/* =================================
-            BOTTOM LINE
+            BOTTOM MESSAGE
         ================================= */}
 
         <div className="limited-seats-bottom">

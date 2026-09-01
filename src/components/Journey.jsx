@@ -145,8 +145,6 @@ const Journey = ({ registrationLink }) => {
               key={step.number}
             >
 
-              {/* Number */}
-
               <div className="journey-step-marker">
 
                 <span>
@@ -155,8 +153,6 @@ const Journey = ({ registrationLink }) => {
 
               </div>
 
-
-              {/* Content */}
 
               <div className="journey-step-content">
 
@@ -181,7 +177,7 @@ const Journey = ({ registrationLink }) => {
 
 
         {/* =================================
-            BOTTOM STATEMENT
+            STATEMENT
         ================================= */}
 
         <div className="journey-statement">
@@ -202,7 +198,7 @@ const Journey = ({ registrationLink }) => {
 
 
         {/* =================================
-            CTA
+            SINGLE CTA
         ================================= */}
 
         <div className="journey-cta">
@@ -211,17 +207,15 @@ const Journey = ({ registrationLink }) => {
             href={registrationLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="journey-button"
+            className="journey-button journey-cta-button"
           >
-
             <span>
-              Start My 90-Day Journey
+              Book My Session Now!
             </span>
 
             <span className="journey-button-arrow">
               →
             </span>
-
           </a>
 
         </div>

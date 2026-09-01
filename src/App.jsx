@@ -19,17 +19,20 @@ const App = () => {
 
   const currentPath = window.location.pathname;
 
-  /* =================================
-     THANK YOU PAGE
-  ================================= */
+  // =================================
+  // THANK YOU PAGE
+  // Works for:
+  // /thank-you
+  // /hari/thank-you
+  // =================================
 
-  if (currentPath === "/thank-you") {
+  if (currentPath.endsWith("/thank-you")) {
     return <ThankYou />;
   }
 
-  /* =================================
-     LANDING PAGE
-  ================================= */
+  // =================================
+  // LANDING PAGE
+  // =================================
 
   return (
     <>
