@@ -42,7 +42,6 @@ const Mentors = ({ registrationLink }) => {
       ================================= */}
 
       <div className="mentors-background">
-
         <div className="mentors-orb mentors-orb-one"></div>
 
         <div className="mentors-orb mentors-orb-two"></div>
@@ -51,8 +50,8 @@ const Mentors = ({ registrationLink }) => {
 
         <div className="mentors-ring mentors-ring-two"></div>
 
-        <div className="mentors-grid"></div>
-
+        {/* Background Grid */}
+        <div className="mentors-grid-background"></div>
       </div>
 
 
@@ -63,7 +62,6 @@ const Mentors = ({ registrationLink }) => {
         ================================= */}
 
         <div className="mentors-label">
-
           <span className="mentors-label-line"></span>
 
           <span>
@@ -71,7 +69,6 @@ const Mentors = ({ registrationLink }) => {
           </span>
 
           <span className="mentors-label-line"></span>
-
         </div>
 
 
@@ -82,13 +79,11 @@ const Mentors = ({ registrationLink }) => {
         <div className="mentors-heading">
 
           <h2 className="mentors-title">
-
             Learn From People
 
             <span>
               Who've Been There.
             </span>
-
           </h2>
 
           <p className="mentors-description">
@@ -185,7 +180,7 @@ const Mentors = ({ registrationLink }) => {
             href={registrationLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="mentors-button mentors-cta-button"
+            className="mentors-cta-button"
           >
             <span>
               Book My Session Now!

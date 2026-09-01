@@ -2918,7 +2918,7 @@
 /* Cards */
 
 .mentor-card {
-  opacity: 0;
+  opacity: 1;
 
   animation:
     mentorCardReveal
@@ -3009,7 +3009,7 @@
     infinite;
 }
 
-.mentors-grid {
+.mentors-grid-background {
   animation:
     mentorsGridMove
     16s

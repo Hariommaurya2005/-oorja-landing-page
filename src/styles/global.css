@@ -5641,7 +5641,7 @@ img {
    GRID
 ========================================= */
 
-.mentors-grid {
+.mentors-grid-background {
   position: absolute;
 
   inset: 0;
@@ -5667,8 +5667,9 @@ img {
       black,
       transparent 78%
     );
-}
 
+  pointer-events: none;
+}
 
 /* =========================================
    CONTAINER
